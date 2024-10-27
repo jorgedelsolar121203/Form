@@ -1,0 +1,103 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Estilos de los encabezados */
+h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+/* Estilo para párrafos */
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Contenedor para los inputs */
+.input-wrapper {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    display: flex; /* Usar flexbox para alinear imágenes y inputs */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilo para los inputs y selects */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Estilo para la imagen del input */
+.input-icon {
+    width: 50px; /* Ajusta el ancho de la imagen */
+    height: 50px; /* Mantiene la relación de aspecto */
+    left: 30px; /* Espacio entre la imagen y el input */
+    margin-left: 20px;
+}
+
+/* Estilo al enfocar los inputs */
+input:focus,
+select:focus {
+    border-color: #007BFF;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 48%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón de limpiar */
+button[type="reset"] {
+    background-color: #dc3545;
+}
+
+button[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Ocultar flechas en campos de tipo number */
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Chrome, Safari y Edge */
+    margin: 0;
+}
